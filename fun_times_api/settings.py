@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     "rest_framework",
     'dj_rest_auth.registration',
     'corsheaders',
+    'django-filters'
 
     "profiles",
     "posts",
