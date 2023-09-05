@@ -62,7 +62,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = ["localhost",
-                 "8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com"]
+                 "8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com",
+                 "fun-times-api-b85f307c200e.herokuapp.com"]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com"
