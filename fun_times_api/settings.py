@@ -47,6 +47,7 @@ REST_USE_JWT = True
 JWT_AUTH_SECURE = True
 JWT_AUTH_COOKIE = 'my-app-auth'
 JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
+JWT_AUTH_SAMESITE = 'None'
 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'fun_times_api.serializers.CurrentUserSerializer'
@@ -61,13 +62,27 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ["localhost",
-                 "8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com",
+ALLOWED_HOSTS = ["8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com",
+                 "https://fun-times-api-b85f307c200e.herokuapp.com",
                  "fun-times-api-b85f307c200e.herokuapp.com"]
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com"
-]
+
+# if 'CLIENT_ORIGIN' in os.environ:
+#    CORS_ALLOWED_ORIGINS = [
+#        os.environ.get('CLIENT_ORIGIN')
+#    ]
+# else:
+#    CORS_ALLOWED_ORIGIN_REGEXES = [
+#        "^https://.*\.codeanywhere\.io$",
+#    ]
+
+
+CORS_ALLOW_CREDENTIALS = True
+
+# CSRF_TRUSTED_ORIGINS = [
+#     "https://8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com"
+# ]
+
 
 # Application definition
 
@@ -81,7 +96,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary",
     "rest_framework",
-    'corsheaders',
     'django_filters',
     'rest_framework.authtoken',
     'dj_rest_auth',
@@ -90,6 +104,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
+    "corsheaders",
 
     "profiles",
     "posts",
@@ -110,22 +125,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-# if 'CLIENT_ORIGIN' in os.environ:
-#    CORS_ALLOWED_ORIGINS = [
-#        os.environ.get('CLIENT_ORIGIN')
-#    ]
-# else:
-#    CORS_ALLOWED_ORIGIN_REGEXES = [
-#        "^https://.*\.codeanywhere\.io$",
-#    ]
-
-CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'fun_times_api.urls'
-
-JWT_AUTH_COOKIE = 'my-app-auth'
-JWT_AUTH_REFRESH_COOKE = 'my-refresh-token'
-JWT_AUTH_SAMESITE = 'None'
 
 TEMPLATES = [
     {
@@ -168,7 +169,6 @@ else:
 #    }
 # }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -186,7 +186,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
