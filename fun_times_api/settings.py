@@ -67,22 +67,23 @@ ALLOWED_HOSTS = ["8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com",
                  "fun-times-api-b85f307c200e.herokuapp.com"]
 
 
-# if 'CLIENT_ORIGIN' in os.environ:
-#    CORS_ALLOWED_ORIGINS = [
-#        os.environ.get('CLIENT_ORIGIN')
-#    ]
-# else:
-#    CORS_ALLOWED_ORIGIN_REGEXES = [
-#        "^https://.*\.codeanywhere\.io$",
-#    ]
+if 'CLIENT_ORIGIN' in os.environ:
+    CORS_ALLOWED_ORIGINS = [
+        os.environ.get('CLIENT_ORIGIN')
+    ]
+if 'CLIENT_ORIGIN_DEV' in os.environ:
+    extracted_url = re.match(
+        r'^([^.]+)', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
 
+    CORS_ALLOWED_ORIGIN_REGEXES = [
+        rf"{extracted_url}.(eu|us)\d+\.codeanyapp\.com$",
+    ]
 
 CORS_ALLOW_CREDENTIALS = True
 
-# CSRF_TRUSTED_ORIGINS = [
-#     "https://8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com"
-# ]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com', 'https://fun-times-api-b85f307c200e.herokuapp.com'
+]
 
 # Application definition
 
