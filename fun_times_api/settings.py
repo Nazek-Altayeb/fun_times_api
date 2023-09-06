@@ -114,7 +114,7 @@ MIDDLEWARE = [
 #    CORS_ALLOWED_ORIGINS = [
 #        os.environ.get('CLIENT_ORIGIN')
 #    ]
-#else:
+# else:
 #    CORS_ALLOWED_ORIGIN_REGEXES = [
 #        "^https://.*\.codeanywhere\.io$",
 #    ]
