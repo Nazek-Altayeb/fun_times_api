@@ -12,6 +12,10 @@ class Profile(models.Model):
     image = models.ImageField(
         upload_to='images/', default='../default_image_rgq6aq'
     )
+    visited_city = models.CharField(max_length=255, blank=True)
+    favourite_hobby = models.CharField(max_length=255, blank=True)
+    activity = models.CharField(max_length=255, blank=True)
+    age = models.IntegerField(blank=True, null=True)
 
     class Meta:
         ordering = ['-created_at']
