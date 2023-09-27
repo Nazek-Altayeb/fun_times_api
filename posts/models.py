@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from followers.models import Follower
+from followers.serializers import FollowerNameSerializer
 
 
 class Post(models.Model):
@@ -18,7 +19,7 @@ class Post(models.Model):
     visibility = models.CharField(
         max_length=20, choices=OPTIONS, default='public')
     followers = models.ManyToManyField(
-        Follower, related_name='following', blank=True)
+        Follower, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=255)
@@ -33,3 +34,9 @@ class Post(models.Model):
 
     def __str__(self):
         return f'{self.id} {self.title}'
+
+    def get_followers(self, obj):
+        owner = obj.owner
+        followers = owner.followed.all()
+        print(f'followers: {followers}')
+        return FollowerNameSerializer(followers, many=True).data
