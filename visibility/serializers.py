@@ -7,11 +7,11 @@ class VisibilitySerializer(serializers.ModelSerializer):
     """
     Serializer for the Visibility model
     """
-    post = serializers.ReadOnlyField(source='post.id')
-    created_at = serializers.SerializerMethodField()
+    option = serializers.CharField(
+        max_length=20, allow_blank=True, default=None)
 
     class Meta:
         model = Visibility
         fields = [
-            'id',  'created_at', 'post'
+            'id', 'option'
         ]

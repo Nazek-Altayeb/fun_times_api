@@ -18,12 +18,3 @@ class FavouriteFollowersList(generics.ListAPIView):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
-
-
-class FavouriteFollowerDetail(generics.RetrieveDestroyAPIView):
-    """
-    Retrieve a favourite follower
-    """
-    permission_classes = [IsOwnerOrReadOnly]
-    queryset = FavouriteFollowers.objects.all()
-    serializer_class = FavouriteFollowerSerializer

@@ -22,3 +22,13 @@ class FollowerSerializer(serializers.ModelSerializer):
             return super().create(validated_data)
         except IntegrityError:
             raise serializers.ValidationError({'detail': 'possible duplicate'})
+
+
+class FollowerNameSerializer(serializers.ModelSerializer):
+    followers = serializers.ReadOnlyField(source='owner.username')
+
+    class Meta:
+        model = Follower
+        fields = [
+            'followers'
+        ]

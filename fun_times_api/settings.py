@@ -61,10 +61,12 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.environ
-# DEBUG = True
+# DEBUG = 'DEV' in os.environ
+DEBUG = True
 ALLOWED_HOSTS = ["8000-nazek-altayeb-fun-times--kyf19dy43q.us2.codeanyapp.com",
+                 "8001-nazek-altayeb-fun-times--kyf19dy43q.us2.codeanyapp.com",
                  "https://fun-times-api-b85f307c200e.herokuapp.com",
+                 "8002-nazek-altayeb-fun-times--kyf19dy43q.us2.codeanyapp.com"
                  "fun-times-api-b85f307c200e.herokuapp.com"]
 
 
@@ -85,7 +87,9 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-nazek-altayeb-fun-times--5rwapzhowx.us2.codeanyapp.com',
     'https://8000-nazek-altayeb-fun-times--kyf19dy43q.us2.codeanyapp.com',
-    'https://fun-times-api-b85f307c200e.herokuapp.com'
+    'https://fun-times-api-b85f307c200e.herokuapp.com',
+    "https://8001-nazek-altayeb-fun-times--kyf19dy43q.us2.codeanyapp.com",
+    "https://8002-nazek-altayeb-fun-times--kyf19dy43q.us2.codeanyapp.com"
 ]
 
 # Application definition

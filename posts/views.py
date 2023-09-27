@@ -51,3 +51,6 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
         likes_count=Count('likes', distinct=True),
         comments_count=Count('comment', distinct=True)
     ).order_by('-created_at')
+
+  # def get_followers(self, **kwargs):
+   #     return self.request.user.post.followers.followed.all()
