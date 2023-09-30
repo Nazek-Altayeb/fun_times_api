@@ -2,8 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-"""class FavouriteFollowers(models.Model):
-    
+class FavouriteFollowers(models.Model):
+    """
     a user could specify and select some other users to be his favourite ones, 
     who could see his/her posts
     
