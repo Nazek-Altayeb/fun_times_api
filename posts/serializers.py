@@ -43,7 +43,7 @@ class PostSerializer(serializers.ModelSerializer):
     def get_followers(self, obj):
         owner = obj.owner
         followers = owner.followed.all()
-        print(f'followers: {followers}')
+        print(f'follower: {followers}')
         return FollowerNameSerializer(followers, many=True).data
         # return followers
 

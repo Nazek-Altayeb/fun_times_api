@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Visibility(models.Model):
-    OPTIONS = (
+   """ OPTIONS = (
         ('private', 'private'),
         ('public', 'public'),
     )
@@ -14,4 +14,4 @@ class Visibility(models.Model):
     # created_at = models.DateTimeField(auto_now_add=True)
 
     # class Meta:
-    #    ordering = ['-created_at']
+    #    ordering = ['-created_at']"""

@@ -6,7 +6,7 @@ class FavouriteFollowers(models.Model):
     """
     a user could specify and select some other users to be his favourite ones, 
     who could see his/her posts
-    """
+    
     owner = models.ForeignKey(
         User, related_name='owner', on_delete=models.CASCADE
     )
@@ -20,3 +20,4 @@ class FavouriteFollowers(models.Model):
 
     def __str__(self):
         return f'{self.owner} {self.follower}'
+"""
