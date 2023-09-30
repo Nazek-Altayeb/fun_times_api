@@ -7,8 +7,8 @@ from .serializers import VisibilitySerializer
 
 class Visibility(generics.ListCreateAPIView):
     """
-    List of options
-    """
+List of options
+"""
     serializer_class = VisibilitySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Visibility.objects.all()
