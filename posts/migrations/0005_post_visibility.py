@@ -6,8 +6,14 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-
+        ('posts', '0004_remove_post_visibility'),
     ]
 
     operations = [
+        migrations.AddField(
+            model_name='post',
+            name='visibility',
+            field=models.CharField(choices=[(
+                'private', 'private'), ('public', 'public')], default='public', max_length=20),
+        ),
     ]
