@@ -1,4 +1,4 @@
-from rest_framework import generics, permissions
+"""from rest_framework import generics, permissions
 from fun_times_api.permissions import IsOwnerOrReadOnly
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Visibility
@@ -12,3 +12,4 @@ class Visibility(generics.ListCreateAPIView):
     serializer_class = VisibilitySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Visibility.objects.all()
+"""

@@ -2,20 +2,14 @@
 
 from django.db import migrations
 
-
+"""
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('visibility', '0002_remove_visibility_post'),
+
     ]
 
     operations = [
-        migrations.AlterModelOptions(
-            name='visibility',
-            options={},
-        ),
-        migrations.RemoveField(
-            model_name='visibility',
-            name='created_at',
-        ),
+
     ]
+"""

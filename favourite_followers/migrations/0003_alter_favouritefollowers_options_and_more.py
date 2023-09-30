@@ -3,7 +3,7 @@
 from django.db import migrations
 
 
-class Migration(migrations.Migration):
+"""class Migration(migrations.Migration):
 
     dependencies = [
         ('favourite_followers', '0002_remove_favouritefollowers_followers_and_more'),
@@ -27,3 +27,4 @@ class Migration(migrations.Migration):
             name='owner',
         ),
     ]
+"""

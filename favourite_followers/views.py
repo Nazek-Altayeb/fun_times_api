@@ -1,4 +1,4 @@
-from django.db.models import Count
+"""from django.db.models import Count
 from rest_framework import generics, filters, permissions
 from django_filters.rest_framework import DjangoFilterBackend
 from fun_times_api.permissions import IsOwnerOrReadOnly
@@ -17,4 +17,4 @@ class FavouriteFollowersList(generics.ListAPIView):
     serializer_class = FavouriteFollowerSerializer
 
     def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+        serializer.save(owner=self.request.user)"""
