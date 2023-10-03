@@ -116,6 +116,7 @@ INSTALLED_APPS = [
     "likes",
     "followers",
     "favourite_followers",
+    "adventures_list",
     "visibility",
 ]
 
