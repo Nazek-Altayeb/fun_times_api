@@ -4,7 +4,7 @@ from .models import AdventuresList
 from .serializers import AdventureslistSerializer
 
 
-class AdventuresList(generics.ListCreateAPIView):
+class AdventureList(generics.ListCreateAPIView):
     """
     List all AdventuresList items. Create an item if authenticated.
     The perform_create method associates the item with the logged in user.
