@@ -16,6 +16,7 @@ class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.annotate(
         likes_count=Count('likes', distinct=True),
         comments_count=Count('comment', distinct=True)
+        adventures_count=Count('adventureslist', distinct=True)
     ).order_by('-created_at')
     filter_backends = [
         filters.OrderingFilter,
@@ -26,6 +27,7 @@ class PostList(generics.ListCreateAPIView):
         'owner__followed__owner__profile',
         'likes__owner__profile',
         'owner__profile',
+        'adventureslist__owner__profile',
     ]
     search_fields = [
         'owner__username',
@@ -34,7 +36,9 @@ class PostList(generics.ListCreateAPIView):
     ordering_fields = [
         'likes_count',
         'comments_count',
+        'adventureslist_count',
         'likes__created_at',
+        'adventureslist__created_at',
     ]
 
     def perform_create(self, serializer):
@@ -50,7 +54,8 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.annotate(
         likes_count=Count('likes', distinct=True),
         comments_count=Count('comment', distinct=True)
+        adventureslist_count=Count('adventureslist', distinct=True)
     ).order_by('-created_at')
 
   # def get_followers(self, **kwargs):
-   #     return self.request.user.post.followers.followed.all()
+  # #     return self.request.user.post.followers.followed.all()
