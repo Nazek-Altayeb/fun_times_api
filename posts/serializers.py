@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from posts.models import Post
 from likes.models import Like
+from adventures_list.models import AdventuresList
 from followers.serializers import FollowerNameSerializer
 
 
@@ -13,7 +14,7 @@ class PostSerializer(serializers.ModelSerializer):
     like_id = serializers.SerializerMethodField()
     likes_count = serializers.ReadOnlyField()
     comments_count = serializers.ReadOnlyField()
-    adventure_id = serializers.ReadOnlyField()
+    adventure_id = serializers.SerializerMethodField()
     adventures_count = serializers.ReadOnlyField()
 
     def validate_image(self, value):
@@ -42,12 +43,21 @@ class PostSerializer(serializers.ModelSerializer):
             return like.id if like else None
         return None
 
+    # Get adventureslist ID associated with the authenticated user and the post
+    def get_adventure_id(self, obj):
+        user = self.context['request'].user
+        if user.is_authenticated:
+            adventuresList = AdventuresList.objects.filter(
+                owner=user, post=obj
+            ).first()
+            return adventuresList.id if adventuresList else None
+        return None
+
     def get_followers(self, obj):
         owner = obj.owner
         followers = owner.followed.all()
         print(f'follower: {followers}')
         return FollowerNameSerializer(followers, many=True).data
-        # return followers
 
     class Meta:
         model = Post
@@ -55,6 +65,6 @@ class PostSerializer(serializers.ModelSerializer):
             'id', 'owner', 'is_owner', 'profile_id',
             'profile_image', 'created_at', 'updated_at',
             'title', 'content', 'image',
-            'like_id', 'likes_count', 'comments_count', 'visibility', 
+            'like_id', 'likes_count', 'comments_count', 'visibility',
             'followers', 'adventure_id', 'adventures_count'
         ]
