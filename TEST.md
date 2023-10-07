@@ -31,55 +31,55 @@ here below are lists of results of the pep8 test that has been performed against
 
 | **Tested** | **Result** | **View Result** 
 --- | --- | --- 
-|models|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695637/adventures_-_model_yqhwse.png)
-|serializers|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695637/adventures_-_serializer_klvglg.png)
-|urls|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695636/adventures_-_url_yrlhhw.png)
-|views|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695637/adventures_-_view_vipxeu.png)
+|models|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695637/adventures_-_model_yqhwse.png)</details>
+|serializers|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695637/adventures_-_serializer_klvglg.png)</details>
+|urls|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695636/adventures_-_url_yrlhhw.png)</details>
+|views|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695637/adventures_-_view_vipxeu.png)</details>
 
 **comments**
 
 | **Tested** | **Result** | **View Result**
 --- | --- | --- 
-|models|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695923/comments_-_model_t6buet.png)
-|serializers|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695922/comments_serializers_qzztmk.png)
-|urls|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695922/commants_urls_ou2kg1.png)
-|views|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696695923/coments_-_views_bm0fyy.png)
+|models|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695923/comments_-_model_t6buet.png)</details>
+|serializers|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695922/comments_serializers_qzztmk.png)</details>
+|urls|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695922/commants_urls_ou2kg1.png)</details>
+|views|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696695923/coments_-_views_bm0fyy.png)</details>
 
 **followers**
 
 | **Tested** | **Result** | **View Result** 
 --- | --- | --- 
-|models|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696186/followers_-_model_xrb8cq.png)
-|serializers||[Result](https://res.cloudinary.com/nazek/image/upload/v1696696186/followers_-_serializer_fp8io9.png)
-|urls|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696185/followers_-_url_cwt7dl.png)
-|views|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696185/followers_-_views_pakwsq.png)
+|models|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696186/followers_-_model_xrb8cq.png)</details>
+|serializers||<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696186/followers_-_serializer_fp8io9.png)</details>
+|urls|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696185/followers_-_url_cwt7dl.png)</details>
+|views|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696185/followers_-_views_pakwsq.png)</details>
 
 **likes**
 
 | **Tested** | **Result** | **View Result** 
 --- | --- | --- 
-|models|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_model_f7gcbo.png)
-|merializers|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_serializers_igviwj.png)
-|urls|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_urls_us6lwz.png)
-|views|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_views_v06bys.png)
+|models|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_model_f7gcbo.png)</details>
+|merializers|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_serializers_igviwj.png)</details>
+|urls|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_urls_us6lwz.png)</details>
+|views|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696398/likes_-_views_v06bys.png)</details>
 
 **posts**
 
 | **Tested** | **Result** | **View Result**
 --- | --- | --- 
-|models|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696633/posts_-_model_wmbitz.png)
-|serializers|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696632/posts_-_serializers_sogtbn.png)
-|urls|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696632/posts_-_url_yorx14.png)
-|views|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696632/posts_-_views_swftlr.png)
+|models|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696633/posts_-_model_wmbitz.png)</details>
+|serializers|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696632/posts_-_serializers_sogtbn.png)</details>
+|urls|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696632/posts_-_url_yorx14.png)</details>
+|views|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696632/posts_-_views_swftlr.png)</details>
 
 **profiles**
 
 | **Tested** | **Result** | **View Result** 
 --- | --- | --- 
-|models|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_model_zy9jis.png)
-|serializers|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_serializer_isou49.png)
-|urls|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_url_xisqko.png)
-|views|No errors|[Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_views_dbpwed.png)
+|models|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_model_zy9jis.png)</details>
+|serializers|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_serializer_isou49.png)</details>
+|urls|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_url_xisqko.png)</details>
+|views|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_views_dbpwed.png)</details>
 
 
 ### Automated test

@@ -95,10 +95,8 @@ I have followed the iterative approach, each sprint last for 5 days.
   - [x] [CRUD Posts](https://github.com/Nazek-Altayeb/fun_times_api/issues/4) <code style="color:#5319E7">(Should have)</code>
   - [x] [CRUD comments](https://github.com/Nazek-Altayeb/fun_times_api/issues/5) <code style="color:#5319E7">(Should have)</code>
   - [x] [Add /Remove likes](https://github.com/Nazek-Altayeb/fun_times_api/issues/6) <code style="color:#5319E7">(Should have)</code>
-
 - **Sprint 2 (Sep 3rd To 7th, 2023)**
   - [x] [Deploy and test](https://github.com/Nazek-Altayeb/fun_times_api/issues/7) <code style="color:#5319E7">(Should have)</code>
-
 - **Sprint 3 (Sep 8th To 12th, 2023)**
   - [x] [Bugs fix](https://github.com/Nazek-Altayeb/fun_times_api/issues/9) <code style="color:red">(Must have)</code>
 - **Break (Sep 13th To Oct 2nd, 2023)**
@@ -106,7 +104,6 @@ I have followed the iterative approach, each sprint last for 5 days.
 - **Sprint 4 (Oct 3rd To 7th, 2023)**
   - [x] [Set post visibility](https://github.com/Nazek-Altayeb/fun_times_api/issues/8) <code style="color:red">(Must have)</code>
   - [x] [Documentation](https://github.com/Nazek-Altayeb/fun_times_api/issues/10) <code style="color:#5319E7">(Should have)</code>
-
 
 ## Bugs
   - visibility object return null when loading posts, this was resolved by adding the visibility objects to Post's serializer set of fields.
