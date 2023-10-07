@@ -72,6 +72,10 @@ Each of the following apps consist of:
   
   Users could like/unlike posts except their own ones.
 
+**Add /Remove bookmarks**
+  
+  Users could like/unlike posts except their own ones.
+
 **Post's Visibility**
   
   I have created a new app, the main purpose of this app is to let the user to specify whether his post will be visible to all users or only the folowers.
@@ -102,6 +106,7 @@ I have followed the iterative approach, each sprint last for 5 days.
 - **Break (Sep 13th To Oct 2nd, 2023)**
   During this time, all efforts went to the frontend.
 - **Sprint 4 (Oct 3rd To 7th, 2023)**
+  - [x] [Add /Remove bookmark](https://github.com/Nazek-Altayeb/fun_times_api/issues/11) <code style="color:red">(Must have)</code>
   - [x] [Set post visibility](https://github.com/Nazek-Altayeb/fun_times_api/issues/8) <code style="color:red">(Must have)</code>
   - [x] [Documentation](https://github.com/Nazek-Altayeb/fun_times_api/issues/10) <code style="color:#5319E7">(Should have)</code>
 
