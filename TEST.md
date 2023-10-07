@@ -1,18 +1,16 @@
-# API Test Guide
+API Test Guide
 
 The testing.md file provides an overview of the testing conducted on Fun times API. 
-It covers code validation, accessibility, performance, testing on various devices, browser compatibility, testing user stories, and user feedback and improvements. 
-Each section describes the tools used.
-
+It covers code validation, performance and  user stories.
 ## Table of Content
 
-- [API Test Guide](#api-test-guide)
-  - [Table of Content](#table-of-content)
-    - [Code Validation](#code-validation)
-    - [Automated test](#automated-test)
-    - [Manual test](#manual-test)
-      - [URL Testing](#url-testing)
-      - [CRUD functionality](#crud-functionality)
+- [Table of Content](#table-of-content)
+  - [Code Validation](#code-validation)
+  - [Automated test](#automated-test)
+  - [Manual test](#manual-test)
+    - [URL Testing](#url-testing)
+    - [CRUD functionality](#crud-functionality)
+- [Summary](#summary)
 
 ### Code Validation
 
@@ -91,10 +89,10 @@ here below are lists of results of the pep8 test that has been performed against
 The manaul test is perfomed by following the below
 
 
-1. Check all CRUD Functionalities for the different entities (profiles, posts, adventureslist, comments, followers, likes) , and test by appling these functionalities on exammples, check the results in the database to make sure data is stored/removed/updated there correctly 
+1. Check all CRUD Functionalities for the different entities (profiles, posts, adventureslist, comments, followers, likes) , and test by appling these functionalities on examples, check the results in the database to make sure data is stored/removed/updated there correctly 
 
 2. Test the search functionality, by typing existing filters (post title, content ... etc) and try the opposite as well.
-3. Test the paths, make sure all used pathed are connected with methods that perform the expected functionality.
+3. Test the paths, make sure all used path are connected with methods that perform the expected functionality.
 
 #### URL Testing
 
@@ -127,4 +125,7 @@ The manaul test is perfomed by following the below
 |Adventureslist|:white_check_mark:|:white_check_mark:|-|:white_check_mark:
 
 
+## Summary
 
+All tests indicates that the api follows the code style standards as well as consistency.
+To jump to the related frontend documentation, please [click here](https://github.com/Nazek-Altayeb/fun-times)
