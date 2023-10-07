@@ -78,11 +78,22 @@ here below are lists of results of the pep8 test that has been performed against
 --- | --- | --- 
 |models|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_model_zy9jis.png)</details>
 |serializers|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_serializer_isou49.png)</details>
+|test|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696709082/profiles_-_test_ctgnon.png)</details>
 |urls|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_url_xisqko.png)</details>
 |views|No errors|<details><summary>Screenshot of result</summary>![Result](https://res.cloudinary.com/nazek/image/upload/v1696696974/profiles_-_views_dbpwed.png)</details>
 
 
 ### Automated test
+The gaol of the automated test is to ensure the consistency,
+for example, the Profile model in my project is an extension of the User model.
+So, in order to prove the consistency of the User model with it's extension model 'Profile', the Automated test could ensure that.
+
+To run the tests, execute the following command in the terminal:
+
+```bash
+python manage.py test 
+```
+when test run successfully , the output should show the number of tests and the amount of time it tooks, and print `OK`  
 
 ### Manual test
 
