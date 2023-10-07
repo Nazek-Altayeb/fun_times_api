@@ -57,5 +57,3 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
         adventureslist_count=Count('adventureslist', distinct=True)
     ).order_by('-created_at')
 
-  # def get_followers(self, **kwargs):
-  # #     return self.request.user.post.followers.followed.all()

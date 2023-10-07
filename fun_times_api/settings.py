@@ -62,7 +62,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
-# DEBUG = True
+
 ALLOWED_HOSTS = ["8000-nazek-altayeb-fun-times--kyf19dy43q.us2.codeanyapp.com",
                  "https://fun-times-api-b85f307c200e.herokuapp.com",
                  "fun-times-api-b85f307c200e.herokuapp.com"]
