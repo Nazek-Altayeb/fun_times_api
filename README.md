@@ -135,7 +135,7 @@ Tests results are available [here](TEST.md).
 - cloudinary, django-cloudinary-storage: Used for managing the storage and delivery of images through Cloudinary, a cloud-based service.
 - dj-database-url: Utility to help you load your database into your dictionary from the DATABASE_URL environment variable.
 - dj-rest-auth, Django-allauth, djangorestframework-simplejwt, PyJWT, oauthlib, requests-oauthlib, python3-openid: These libraries are used for managing user authentication, providing support for JWT tokens, OAuth and OpenID.
-- Django, djangorestframework, django-filter: These are core components of the Django web framework, used for building the backend of the Travel Tickr application.
+- Django, djangorestframework, django-filter: These are core components of the Django web framework, used for building the backend of the Fun Times application.
 - gunicorn: A Python WSGI HTTP server for UNIX, used in deploying the application.
 - Pillow: An imaging library in Python, allowing support for opening, manipulating, and saving many different image file formats.
 - psycopg2: PostgreSQL adapter for Python, enabling Python to connect to the PostgreSQL database.
